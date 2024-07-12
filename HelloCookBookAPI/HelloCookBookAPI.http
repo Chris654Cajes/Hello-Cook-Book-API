@@ -1,0 +1,6 @@
+@HelloCookBookAPI_HostAddress = http://localhost:5097
+
+GET {{HelloCookBookAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
