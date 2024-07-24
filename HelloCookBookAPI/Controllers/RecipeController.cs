@@ -123,6 +123,7 @@ namespace HelloCookBookAPI.Controllers
                     return result;
                 }
 
+                // If all fields are entered, add this new recipe to the list
                 using (var db = new CookBookContext())
                 {
                     Recipe recipe = new Recipe();
