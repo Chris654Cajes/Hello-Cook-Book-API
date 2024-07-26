@@ -1,4 +1,8 @@
-﻿namespace HelloCookBookAPI.Models
+﻿/*
+ * This class contains results from the API
+ */
+
+namespace HelloCookBookAPI.Models
 {
     public class Result
     {
