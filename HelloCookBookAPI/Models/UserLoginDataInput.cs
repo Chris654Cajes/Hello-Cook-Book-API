@@ -1,4 +1,8 @@
-﻿namespace HelloCookBookAPI.Models
+﻿/*
+ * This class is used as user login
+ */
+
+namespace HelloCookBookAPI.Models
 {
     public class UserLoginDataInput
     {
