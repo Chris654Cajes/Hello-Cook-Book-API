@@ -77,7 +77,7 @@ namespace HelloCookBookAPI.Controllers
                 // Check if the account has already existed. if it is, the user will be asked to input different username
                 using (var db = new CookBookContext())
                 {
-                    var user = db.Users.Where(x => x.Username == userDataInput.Username).FirstOrDefault();
+                    var user = db.Users.Where(x => x.Username == userDataInput.Username && x.Id != userDataInput.Id).FirstOrDefault();
 
                     // Check if the specific user exists
                     if (user != null)
@@ -160,7 +160,7 @@ namespace HelloCookBookAPI.Controllers
                     using (var db = new CookBookContext())
                     {
                         var user = db.Users.Where(x => x.Id == userDataInput.Id).FirstOrDefault();
-                        var usernameExists = db.Users.Where(x => x.Username == userDataInput.Username).FirstOrDefault();
+                        var usernameExists = db.Users.Where(x => x.Username == userDataInput.Username && x.Id != userDataInput.Id).FirstOrDefault();
 
                         // Check if the specific user exists
                         if (user == null)
